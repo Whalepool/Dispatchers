@@ -1,0 +1,6 @@
+python-telegram-bot
+pyzmq
+pprint
+yaml
+coloredlogs
+setproctitle
