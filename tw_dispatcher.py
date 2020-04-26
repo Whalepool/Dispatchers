@@ -7,8 +7,7 @@ if __name__ == '__main__':
 	logger = logging.getLogger(__name__)
 	coloredlogs.install(level='DEBUG', logger=logger)
 	
-	setproctitle.setproctitle('tg_dispatcher')
+	setproctitle.setproctitle('tw_dispatcher')
 
-	node = dispatchers.TGDispatcher()
-	node.launch_bot() 
+	node = dispatchers.TWDispatcher()
 	node.listen_zmq_commands()

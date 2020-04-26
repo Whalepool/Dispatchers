@@ -1,15 +1,24 @@
 
-
+# ZMQ
 ZMQ_XPUB_PORT: 5558
 
+# TELEGRAM API
 TG_API_KEY: "my-telegram-api-key" 
 
+# TELEGRAM USERS 
 OWNER: 123456767
 RECEIVERS: 
   - tg_user_id: 123456767
     username: "my_telegram_username"
     perms: "all"
 
+# TWITTER API 
+TWITTER_CONSUMER_KEY: 'twitter_consumer_api_key'
+TWITTER_CONSUMER_SECRET: 'twitter_consumer_api_secret'
+TWITTER_ACCESS_TOKEN: 'twitter_access_token'
+TWITTER_ACCESS_TOKEN_SECRET: 'twitter_access_token_secret'
+
+# NOTES 
 MULTI_LINE: > 
    This
    is

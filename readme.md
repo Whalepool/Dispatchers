@@ -2,7 +2,7 @@
    
 Send via ZMQ json data of anything and have it message you (or more)    
      
-Sample to send  
+Sample to send to telegram
 ```   
 {     
 	'chat_id': 34_to_chat_id_34,      
@@ -12,3 +12,11 @@ Sample to send
 	'picture': '/some/path/to/some/pic.png'     
 }     
 ```  
+  
+Sample to send to twitter    
+```   
+{
+	'msg': 'Some tweet',    
+	'picture': '/maybe/some/pic.png'   
+}    
+```   
