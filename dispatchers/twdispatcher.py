@@ -42,7 +42,7 @@ class TWDispatcher( DispatchUtils ):
 		context = zmq.Context()
 		consumer_receiver = context.socket(zmq.SUB)
 		consumer_receiver.connect('tcp://127.0.0.1:'+str(self.config['ZMQ_XPUB_PORT']))
-		consumer_receiver.setsockopt_string(zmq.SUBSCRIBE, 'telegram')
+		consumer_receiver.setsockopt_string(zmq.SUBSCRIBE, 'twitter')
 
 		while True:
 			msg = consumer_receiver.recv()
