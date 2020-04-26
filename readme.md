@@ -1,4 +1,4 @@
-### Telegram Message Dispatcher  
+### Message Dispatcherers
    
 Send via ZMQ json data of anything and have it message you (or more)    
      
