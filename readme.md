@@ -20,7 +20,7 @@ zmq.device(zmq.FORWARDER, frontend, backend)
 ```  
 
 Sample to send to telegram
-```python
+```
 {     
 	'chat_id': 34_to_chat_id_34,      
 	'msg': 'Hey, Yo, its me!',     
@@ -31,7 +31,7 @@ Sample to send to telegram
 ```  
   
 Sample to send to twitter    
-```python 
+``` 
 {
 	'msg': 'Some tweet',    
 	'picture': '/maybe/some/pic.png'   
