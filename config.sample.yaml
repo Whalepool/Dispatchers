@@ -1,12 +1,14 @@
 
 # ZMQ
+ZMQ_HOST: 'tcp://127.0.0.1'
 ZMQ_XPUB_PORT: 5558
+ZMQ_XSUB_PORT: 5557
 
 # TELEGRAM API
 TG_API_KEY: "my-telegram-api-key" 
 
 # TELEGRAM USERS 
-OWNER: 123456767
+TG_OWNER_ID: 123456767
 RECEIVERS: 
   - tg_user_id: 123456767
     username: "my_telegram_username"
@@ -17,6 +19,22 @@ TWITTER_CONSUMER_KEY: 'twitter_consumer_api_key'
 TWITTER_CONSUMER_SECRET: 'twitter_consumer_api_secret'
 TWITTER_ACCESS_TOKEN: 'twitter_access_token'
 TWITTER_ACCESS_TOKEN_SECRET: 'twitter_access_token_secret'
+
+# Teamspeak
+TS_API_USERNAME: "testusername"
+TS_API_PASSWORD: "testpassword"
+TS_SERVER_IP: "127.0.0.1"
+TS_SERVER_PORT: 1234
+TS_SERVER_ID: 123
+TS_BOT_USERNAME: "MyBotsUsername"
+
+# Teamspeak Rooms to connect to 
+TS_PRIMARY_ROOM_ID: 1234
+TS_ROOM_IDS:
+  - 1234 # room1 
+  - 56789 # room2
+
+
 
 # NOTES 
 MULTI_LINE: > 
