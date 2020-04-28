@@ -21,3 +21,5 @@ python example_telegram_sender.py
 # ... 
 # .. repeat for teamspeak / twitter dispatchers
 ```
+
+You can also run `./tmux-terminal.sh` to load up a 3 pane tmux session of the 3 dispatchers
