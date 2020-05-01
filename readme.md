@@ -13,22 +13,38 @@ Supported:
 # recommend using pyenv 3.8.2 
 sudo apt-get install libffi-dev
 
+pip install --upgrade pip
 pip install -r requirements.pip 
 ``` 
+
+##### Make your config file
+```
+cp config.sample.yaml config.yaml
+
+# Make sure all your config details are correct
+```
    
 ##### Usage   
 ```  
-# Run the zmq proxy
-python zmqproxy.py
+# Make sure we have screen installed
+# sudo apt-get install screen 
 
-# Launch the telegram dispatcher
-python tg_dispatcher.py
+# cd into the Dispatchers folder
+# execute the zmqproxy.py script inside a screen and auto detach 
+screen -S zmqproxy -d -m python zmqproxy.py 
 
-# Send a test to the telegram dispatcher
-python example_telegram_sender.py
 
-# ... 
-# .. repeat for teamspeak / twitter dispatchers
+# Make sure we have tmux installed 
+# sudo apt-get install tmux
+# Run the telegram / teamspeak / twitter dispatchers in the tmux session
+./tmux-terminal
+
+# Detach the terminal
+# crtl-b d   
+
+# See tmux sessions 
+tmux ls 
+
+# You can also run them independently outputting to /dev/null or create service files for systemd etc.
+# Personally i like them in the tmux session
 ```
-
-You can also run `./tmux-terminal.sh` to load up a 3 pane tmux session of the 3 dispatchers

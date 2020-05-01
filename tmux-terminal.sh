@@ -1,5 +1,5 @@
 #!/bin/sh
-tmux new-session \; \
+tmux new-session -s Dispatchers \; \
   send-keys "printf '\033]2;%s\033\\' 'telegram'" C-m \; \
   send-keys 'python tg_dispatcher.py' C-m \; \
   split-window -v -p 66 \; \
