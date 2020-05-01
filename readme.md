@@ -8,7 +8,7 @@ Supported:
 - Twitter  
 
 ##### Requirements
-```
+```bash
 # Might need to recompile python after installing this
 # recommend using pyenv 3.8.2 
 sudo apt-get install libffi-dev
@@ -18,14 +18,14 @@ pip install -r requirements.pip
 ``` 
 
 ##### Make your config file
-```
+```bash
 cp config.sample.yaml config.yaml
 
 # Make sure all your config details are correct
 ```
    
 ##### Usage   
-```  
+```bash
 # Make sure we have screen installed
 # sudo apt-get install screen 
 
