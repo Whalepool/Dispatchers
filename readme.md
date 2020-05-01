@@ -6,6 +6,15 @@ Supported:
 - Telegram   
 - Teamspeak  
 - Twitter  
+
+##### Requirements
+```
+# Might need to recompile python after installing this
+# recommend using pyenv 3.8.2 
+sudo apt-get install libffi-dev
+
+pip install -r requirements.pip 
+``` 
    
 ##### Usage   
 ```  

@@ -1,8 +1,9 @@
 python-telegram-bot
 pyzmq
 pprint
-yaml
+pyyaml
 coloredlogs
 setproctitle
 tweepy
 ts3
+wheel
