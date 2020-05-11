@@ -64,10 +64,9 @@ class ZmqReceiver(  ):
 class ZmqSender(  ):
 
 	#####################################
-	logger.info('Connecting to zmq')
 	def __init__(self, topic, host='tcp://127.0.0.1', port=5557 ):
 
-		logger.info('Connecting to zmq')
+		logger.info('ZmqSender init, connecting to zmq: {}:{} ~ {}'.format(host,port,topic))
 		self.context = zmq.Context()
 		self.sender = self.context.socket(zmq.PUB)
 		self.sender.connect('{}:{}'.format(host, port))
