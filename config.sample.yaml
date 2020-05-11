@@ -4,6 +4,10 @@ ZMQ_HOST: 'tcp://127.0.0.1'
 ZMQ_XPUB_PORT: 5558
 ZMQ_XSUB_PORT: 5557
 
+# BFX
+BFX_API_KEY: ""
+BFX_API_SECRET: ""
+
 # TELEGRAM API
 TG_API_KEY: "my-telegram-api-key" 
 

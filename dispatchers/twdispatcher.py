@@ -32,6 +32,10 @@ class TWDispatcher( LoadYamlConfig ):
 
 			if isinstance(msg, dict):
 				if 'picture' in msg:
-					self.api.update_with_media(msg['picture'], msg['msg'])
+					out = self.api.update_with_media(msg['picture'], msg['msg'])
 				else: 
-					self.api.update_status(msg['msg'])
+					out = self.api.update_status(msg['msg'])
+
+				pprint(out)
+
+			

@@ -12,9 +12,11 @@ __all__ = [
     'TGDispatcher',
     'TSDispatcher',
     'TWDispatcher',
+    'BFXPulse',
 ]
 
 
 from .tgdispatcher import TGDispatcher
 from .tsdispatcher import TSDispatcher
 from .twdispatcher import TWDispatcher
+from .bfxpulse import BFXPulse
